@@ -23,10 +23,17 @@ html {
 
 body {
     background-color: var(--bg-dark);
+    overflow-x: hidden;
+    width: 100%;
+    max-width:100vw;
     color: var(--text-main);
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /* --- Typography --- */
@@ -876,4 +883,5 @@ footer {
     .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
     .image-placeholder { height: 300px; }
 }
+
 
